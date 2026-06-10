@@ -1,0 +1,11 @@
+FOR FORMS
+always use name attributes
+always define the method(post,get ets)
+make sure the route name match
+
+
+FOR JINJA 2
+1-used when you want to display python valurs
+ ex <p> welcome {name} </p>
+2- conditional statement
+{% if %}....{%end if %}

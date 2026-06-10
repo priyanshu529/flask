@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}my website {% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my website</h1>
+        <nav>
+            <a href="/">home</a>
+        </nav>
+    </header>
+    {% with messages = get_flashed_messages() %}
+    {%if messages %}
+    <ul style="color:red"></ul>
+    {% for msg in messages %}
+    <li>{{msg}} </li>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <p>copyright 2024</p>
+    </footer>
+</body>
+</html>
