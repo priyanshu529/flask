@@ -1,0 +1,10 @@
+Flask-WTF is a Flask extension that helps you create and handle web forms more easily and securely. It integrates Flask with the Python form library WTForms.
+
+Without Flask-WTF, you manually:
+
+Create HTML form fields
+Read request.form
+Check validation yourself
+Handle security like CSRF manually
+
+Flask-WTF automates a lot of this.
